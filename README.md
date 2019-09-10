@@ -32,7 +32,7 @@ on this data before moving on to other tasks.
 Your very first task will be to copy the data to your own S3 bucket.  This
 might take some time, but will speed things up in the long run.
 
-## Proceedure
+## Procedure
 Roughly, your steps are to:
 <ul>
 <li>Clean the data</li>
