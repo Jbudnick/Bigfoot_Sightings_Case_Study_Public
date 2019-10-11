@@ -44,6 +44,5 @@ Roughly, your steps are to:
 
 ## Deliverable
 At every step in this process you will be making decisions.  <b>Think</b>
-about everything you do.  Around 4 pm, you should stop work and spend some
-time putting together a presentation of why you chose to do what you did. 
+about everything you do. Presentation of why you chose to do what you did is due EOD. 
 
