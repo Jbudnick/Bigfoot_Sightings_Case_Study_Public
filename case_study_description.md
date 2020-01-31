@@ -4,7 +4,7 @@ In this case study you'll work in a situation more like that you'll find in your
 
 ## The Data
 
-There are two data sets you can choose to work from, one about UFO sightings and the other about bigfoot sightings.  They are both large files, though there are subsets (the first 100 records) of both datasets in the `data` folder.
+There are two data sets you can choose to work from, one about UFO sightings and the other about Bigfoot sightings.  They are both large files, though there are subsets (the first 100 records) of both datasets in the `data` folder.
 
 ### UFO Sightings
 
