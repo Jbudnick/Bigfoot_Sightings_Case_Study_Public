@@ -1,6 +1,6 @@
 # NLP Unsupervised Learning Case Study
 
-In this case study you'll get to work in a situation much more like that which you'll find in both your personal projects, while interviewing, and in industry. What is meant by that? Our data is usually unstructured/dirty and our problem ill/undefined.
+In this case study you'll work in a situation more like that you'll find in your personal projects, while interviewing, and in industry. What is meant by that? This data is usually unstructured/dirty and the problem ill/undefined.
 
 ## The Data
 
