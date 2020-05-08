@@ -59,19 +59,22 @@ Some general notes and EDA about our data:
 
 
 
-# How/why you chose certain ML algorithms for analysis
+# ML algorithms for analysis
 Algorithm chosen: Non-Neagative Matrix Factorization (NMF)<br><br>
 Why: We chose NMF because it allows us to easily interpret the impact each word has in creating the infered topics. It also allows us to easily assign a topic to each document based on how heavily that document loads onto a given topic. Furthermore, we were not concerened with our latent topics being orthoganal, so the increase in interpretability of the weights outweighed being able to interpret the amount of variance each topic explained. 
         
 
-# How you tuned and evaluated your model
+# Tuning and evaluating model
 We took an iterative approach to tuning our model in which we mainly tuned the stop words list and the amount of latent topics. We started by running NMF with n_components = 3. We then looked at the top words associated with each topic. We found that the topics offered little description of the sighting because the top words were generic. We removed the words we viewed as non descriptive from our analysis by adding them to the stop words list. We continued through this process until we were satisfied that the topics' top words gave insight to how the sighting unfolded. As we were adding words to our stop words list we were also increasing and decreasing the n_components. We settled on five topics because we noticed that the top words for the five topics appeared to be describing the activity the observer was engaged in when the sightings occured (Hiking, Camping, Hunting/Winter, Home-Sighting, Driving)
+
 
 # Results
 
 ## Observations
 
 ### Topics & Features
+
+Based on observations in the data, topics and features were analyzed using 10 words and 5 topics.
 
 |   Topic # | Word #0   | Word #1   | Word #2   | Word #3   | Word #4   | Word #5   | Word #6   | Word #7   | Word #8   | Word #9   |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
@@ -81,7 +84,6 @@ We took an iterative approach to tuning our model in which we mainly tuned the s
 |         3 | house     | dog       | window    | door      | outside   | said      | night     | went      | ran       | home      |
 |         4 | road      | car       | saw       | creature  | driving   | tall      | hair      | arm       | highway   | dark      |
 
-
 ### Topic Names
 |   Topic # | Name   |
 |-----------|-----------|
@@ -90,7 +92,6 @@ We took an iterative approach to tuning our model in which we mainly tuned the s
 |         2 | Hunting/Winter     |
 |         3 | Home-Sighting     | 
 |         4 | Driving      |
-
 
 ![](/images/Observations.png)
 
@@ -125,6 +126,8 @@ We took an iterative approach to tuning our model in which we mainly tuned the s
 
 ### Topics & Features
 
+Times and Conditions were grouped together in the database, so all values were unique. NMF was used to classify the words used into topics and this was used to determine the time of day or weather condition of when the sightings occurred. 
+
 |   Topic # | Word #0   | Word #1   | Word #2   | Word #3   | Word #4   | Word #5       | Word #6   | Word #7   |
 |-----------|-----------|-----------|-----------|-----------|-----------|---------------|-----------|-----------|
 |         0 | night     | late      | moon      | cool      | midnight  | summer        | 11pm      | clear     |
@@ -149,4 +152,5 @@ We took an iterative approach to tuning our model in which we mainly tuned the s
 
 ![](/images/TimeConditions.png)
 
-Times and Conditions were grouped together in the database, so all values were unique. NMF was used to classify the words used into topics and this was used to determine the time of day or weather condition of when the sightings occurred. It looks like the majority of the sightings occurred during the evening, and while it was dark outside.
+It looks like the majority of the sightings occurred during the evening, and/or while it was dark outside, but the sightings occurred at all times of day and under a wide variety of conditions.
+
