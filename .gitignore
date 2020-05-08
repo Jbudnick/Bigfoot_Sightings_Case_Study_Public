@@ -1,4 +1,6 @@
-data/
+/data/bigfoot_data.json
+/data/ufo_data.json
+/data/ufodata.json
 *.pyc
 .ipynb_checkpoints
 __pycache__
