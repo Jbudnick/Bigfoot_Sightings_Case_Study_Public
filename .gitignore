@@ -1,7 +1,14 @@
 /data/bigfoot_data.json
 /data/ufo_data.json
 /data/ufodata.json
+/data/ufo_first100records.json
+/data/bigfoot_first100records.json
+/data/bigfoot_100.pkl
+/data/bigfoot_first100records.json
+/data/Canada_counts_df_pickled_df
+/data/State_Counts_pickled_df
 *.pyc
 .ipynb_checkpoints
 __pycache__
 .vscode
+/data/bigfoot_pickled_df

@@ -3,11 +3,9 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 
-if __name__ == '__main__':
-
-    filename = "../data/bigfoot_first100records.txt"
+def parse_json(filepath, outfilepath):
     records = []
-    with open(filename) as f:
+    with open(filepath) as f:
         for record in f:
             records.append(json.loads(record))
 
@@ -36,6 +34,13 @@ if __name__ == '__main__':
 
     # clean column names
     df.columns = [col.lower().replace(":","").replace(" ","_") for col in df.columns]
-    
+
     # pickle and save it
-    df.to_pickle('data/{}_pickled_df'.format(filename))
+    df.to_pickle(outfilepath)
+    return
+
+if __name__ == '__main__':
+    infile = "data/bigfoot_first100records.json"
+    outfile = "data/bigfoot_100.pkl"
+    parse_json(infile, outfile)
+    
