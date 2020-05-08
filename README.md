@@ -1,7 +1,9 @@
 
 # NLP Unsupervised Learning Case Study - Bigfoot
-![](/images/Bigfoot_Harry.gif)
-
+<p align="center">
+   ![](/images/Bigfoot_Harry.gif)
+</p>
+   
 We examined the Bigfoot dataset that had reports from all over the USA and Canada. The highest prevelance of sightings comes from the Pacific Northwest, specifically Washington and British Columbia. 
 
 ![](/images/sighting_map.png)
