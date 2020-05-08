@@ -93,19 +93,29 @@ We took an iterative approach to tuning our model in which we mainly tuned the s
 
 
 #### Topic 0: Hiking
-![](/images/wordcloud_topic0.png)
+<p align="center">
+   <img src="/images/wordcloud_topic0.png">
+</p>
 
 #### Topic 1: Camping
-![](/images/wordcloud_topic1.png)
+<p align="center">
+   <img src="/images/wordcloud_topic1.png">
+</p>
 
 #### Topic 2: Hunting/Winter
-![](/images/wordcloud_topic2.png)
+<p align="center">
+   <img src="/images/wordcloud_topic2.png">
+</p>
 
 #### Topic 3: Home-Sighting
-![](/images/wordcloud_topic3.png)
+<p align="center">
+   <img src="/images/wordcloud_topic3.png">
+</p>
 
 #### Topic 4: Driving
-![](/images/wordcloud_topic4.png)
+<p align="center">
+   <img src="/images/wordcloud_topic4.png">
+</p>
 
 <br>
 
