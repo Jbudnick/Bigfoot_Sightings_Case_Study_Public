@@ -92,6 +92,8 @@ We took an iterative approach to tuning our model in which we mainly tuned the s
 |         4 | Driving      |
 
 
+![](/images/Observations.png)
+
 #### Topic 0: Hiking
 <p align="center">
    <img src="/images/wordcloud_topic0.png">
