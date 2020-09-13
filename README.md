@@ -1,26 +1,25 @@
 
-# NLP Unsupervised Learning Case Study - Bigfoot
+# Natural Language Processing / Unsupervised Learning Case Study - Bigfoot Sightings
 <p align="center">
    <img src="/images/Bigfoot_Harry.gif">
 </p>
 
-We examined the Bigfoot dataset that had reports from all over the USA and Canada. The highest prevelance of sightings comes from the Pacific Northwest, specifically Washington and British Columbia. 
+In this project I worked with several data scientists to examine Bigfoot datasets of reported sightings from all over the USA and Canada. The data came from a text based JSON file, and we were able to cluster the data into categories based on words that have been used. We found that the highest prevalence of sightings comes from the Pacific Northwest.
 
 ![](/images/sighting_map.png)
 
 ![](/images/sighting_map_canada.png)
 
 
-# Data Import and EDA
-
-Some general notes and EDA about our data:
+# Data Import and Exploratory Data Analysis
 
 ![](/images/Top_States_sightings_bar.png)
 
-11.6% of reported sightings occurred in Washington
+11.6% (The majority) of reported sightings occurred in Washington.
 
 ![](/images/Top_Months_sightings_bar.png)
 
+The majority of Canadian Sightings occurred in British Columbia.
 
 ![](/images/Top_Canada_Sightings.png)
 
@@ -31,6 +30,8 @@ Some general notes and EDA about our data:
 * 2017 was ommitted - only 2 sightings - assuming data was extracted early 2017
 
 # Text Processing Pipeline
+To clean and process our data, we followed the following procedure.
+
 1. Convert `json` data to pandas `DataFrame` with following columns:
     * 'year'
     * 'season'
@@ -61,7 +62,7 @@ Some general notes and EDA about our data:
 
 # ML algorithms for analysis
 Algorithm chosen: Non-Neagative Matrix Factorization (NMF)<br><br>
-Why: We chose NMF because it allows us to easily interpret the impact each word has in creating the infered topics. It also allows us to easily assign a topic to each document based on how heavily that document loads onto a given topic. Furthermore, we were not concerened with our latent topics being orthoganal, so the increase in interpretability of the weights outweighed being able to interpret the amount of variance each topic explained. 
+We chose NMF because it allows us to easily interpret the impact each word has in creating the infered topics. It also allows us to easily assign a topic to each document based on how heavily that document loads onto a given topic. Furthermore, we were not concerened with our latent topics being orthoganal, so the increase in interpretability of the weights outweighed being able to interpret the amount of variance each topic explained. 
         
 
 # Tuning and evaluating model
